@@ -4,10 +4,10 @@ export default {
 	theme: {
 		extend: {
 			dropShadow: {
-				'3xl': '0 35px 35px rgba(10, 118, 123, 0.25)',
+				'3xl': '0 35px 35px rgba(62, 213, 221, 0.25)',
 				'4xl': [
-					'0 35px 35px rgba(10, 118, 123, 0.25)',
-					'0 45px 65px rgba(10, 118, 123, 0.15)'
+					'0 35px 35px rgba(62, 213, 221, 0.25)',
+					'0 45px 65px rgba(62, 213, 221, 0.15)'
 				]
 			  }
 		},
