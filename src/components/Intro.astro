@@ -1,4 +1,6 @@
 ---
+import PrimaryButton from "./PrimaryButton.astro";
+
 
 ---
 <section class="flex w-full justify-center py-2 pt-32">
@@ -6,7 +8,7 @@
         <div class="flex flex-col text-center md:text-start text-pretty text-white font-bold justify-center gap-8 items-center md:items-start">
             <h1 class="text-pretty text-4xl md:text-7xl">Bienvenidos a Move<span class="text-[#3ED5DD]">GPS</span></h1>
             <p class="text-base">Distribuidores autorizados de <span class="text-[#3ED5DD] text-xl">IGLA</span> y expertos en seguridad vehicular a traves del seguimiento por GPS.</p>
-            <a href="https://www.movegps.cl" class="bg-gradient-to-r from-[#0A767B] to-[#00A7D6] w-max py-4 px-10 rounded-lg text-base transition-transform hover:translate-y-1">Registrate</a>
+            <PrimaryButton text="Registrate" class="bg-gradient-to-r from-[#0A767B] to-[#00A7D6] w-max py-4 px-10 rounded-lg text-base transition-transform hover:translate-y-1" link="https://www.movegps.cl"/>
         </div>
         <div>
             <img src="images/cerradura.png" alt="" width="500" height="500">

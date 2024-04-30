@@ -1,0 +1,26 @@
+---
+import PrimaryButton from "./PrimaryButton.astro"
+---
+
+<section class="w-full flex flex-col md:flex-row text-white font-extrabold gap-8 h-screen pt-16 md:pt-32 text-center md:text-left pb-8">
+    <div class="w-full md:w-[40%] relative md:gap-0 gap-4 flex flex-col">
+        <div class="w-full h-[60vh] md:w-[300px] md:h-[400px] bg-[url('images/aboutUs2.png')] bg-cover rounded-xl md:absolute md:top-0 md:left-0"></div>
+        <div class="w-full h-[60vh] md:w-[300px] md:h-[400px] bg-[url('images/aboutUs1.png')] bg-cover rounded-xl md:absolute md:bottom-0 md:right-0"></div>
+    </div>
+    <div class="flex flex-col w-full md:w-[60%] gap-4 items-center md:items-start">
+        <h3 class="text-base text-[#3ED5DD]">Conócenos</h3>
+        <h1 class="text-6xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </h1>
+        <p class="text-pretty">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            impedit quaerat, ex suscipit, voluptates placeat praesentium culpa
+            quae dolor earum tenetur? Odit quo perferendis aspernatur quidem.
+            Impedit labore possimus quos. Laudantium natus illo eius? Incidunt
+            sed molestias id atque voluptates deleniti eius corrupti ea soluta
+            impedit, explicabo magnam et? Quo, delectus hic? Quas asperiores
+            suscipit alias mollitia fugiat, odit aspernatur!
+        </p>
+        <PrimaryButton text="Conócenos" class="bg-gradient-to-r from-[#0A767B] to-[#00A7D6] w-max py-4 px-10 rounded-lg text-base transition-transform hover:translate-y-1" link="https://www.movegps.cl"/>
+    </div>
+</section>

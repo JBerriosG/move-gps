@@ -2,14 +2,15 @@
 import Logo from "./Logo.astro";
 ---
 
-<header class="flex w-full text-pretty text-white font-bold bg-slate-800 md:bg-transparent fixed">
+<header class="flex w-full text-pretty text-white font-bold bg-slate-800 md:bg-transparent md:fixed">
     <nav class="flex justify-between items-center mx-auto w-[92%] md:pt-6">
         <div class="text-xs md:text-3xl px-1 py-1 z-10"> <Logo class="w-48"/> </div>
-        <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex text-xs md:text-base items-center px-5 bg-slate-800 md:bg-transparent transition-all">
+        <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex text-xs md:text-base items-center px-5 bg-slate-800 md:bg-transparent transition-all">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Inicio</a></li>
+                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Conócenos</a></li>
+                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Beneficios</a></li>
                 <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Servicios</a></li>
-                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Garantías</a></li>
                 <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Planes</a></li>
             </ul>
         </div>
@@ -24,6 +25,6 @@ import Logo from "./Logo.astro";
     menu?.addEventListener('click',()=>{
         let iconName = menu.getAttribute('name');
         menu.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
-        navLinks?.classList.toggle('top-[9%]');
+        navLinks?.classList.toggle('top-[4%]');
     });
 </script>
