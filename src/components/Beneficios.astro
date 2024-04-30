@@ -1,0 +1,38 @@
+---
+import Card from "./Card.astro";
+---
+
+<section
+id="beneficios"
+    class="w-full flex flex-col text-white text-pretty text-center gap-12 md:gap-16 font-extrabold py-16 md:py-32"
+>
+        <div class="flex flex-col md:gap-8 md:px-48">
+            <h3 class="text-base text-[#3ED5DD]">BENEFICIOS</h3>
+            <h1 class="text-2xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </h1>
+            <p class="text-pretty">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam impedit quaerat, ex suscipit, voluptates placeat
+                praesentium culpa quae dolor earum tenetur? Odit quo perferendis
+                aspernatur quidem. Impedit labore possimus quos.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-12 md:gap-16">
+            <Card
+                title="ciberSecurity"
+                body="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+                icon="alarm"
+            />
+            <Card
+                title="ciberSecurity"
+                body="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+                icon="speedometer"
+            />
+            <Card
+                title="ciberSecurity"
+                body="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+                icon="lock"
+            />
+        </div>
+</section>

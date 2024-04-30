@@ -6,4 +6,4 @@ interface Props {
 }
 const {text, link} = Astro.props;
 ---
-<a href=`${link}` class=`${Astro.props.class}`>{text}</a>
+<a href=`${link}` class=`bg-gradient-to-r from-[#0A767B] to-[#00A7D6] w-max py-4 px-10 rounded-lg text-base transition-transform hover:translate-y-1 ${Astro.props.class}`>{text}</a>

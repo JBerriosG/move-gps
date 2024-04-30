@@ -9,9 +9,9 @@ import Logo from "./Logo.astro";
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="#">Inicio</a></li>
                 <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="#conocenos">Conócenos</a></li>
-                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Beneficios</a></li>
-                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Servicios</a></li>
-                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="">Planes</a></li>
+                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="#beneficios">Beneficios</a></li>
+                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="#servicios">Servicios</a></li>
+                <li class="transition-all hover:text-[#3ED5DD] hover:translate-y-1"><a href="#planes">Planes</a></li>
             </ul>
         </div>
         <div class="md:hidden">
@@ -25,6 +25,6 @@ import Logo from "./Logo.astro";
     menu?.addEventListener('click',()=>{
         let iconName = menu.getAttribute('name');
         menu.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
-        navLinks?.classList.toggle('top-[4%]');
+        navLinks?.classList.toggle('top-[2%]');
     });
 </script>
