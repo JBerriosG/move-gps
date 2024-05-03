@@ -6,7 +6,7 @@ import SecondCard from "./SecondCard.astro";
 
 <section class="flex flex-col-reverse md:flex-row w-full text-white gap-8 py-16 md:py-32" id="servicios">
     <div class="flex h-full w-full md:w-[40%] justify-center">
-        <div class="bg-[url('/images/servicios.png')] w-[80%] h-[100vh] md:h-[120vh] bg-cover rounded-xl"></div>
+        <div class="bg-[url('/images/servicios.png')] w-[80%] h-[100vh] md:h-[800px] bg-cover rounded-xl"></div>
     </div>
     <div class="flex flex-col text-center md:text-start font-extrabold w-full md:w-[60%] gap-4">
         <h3 class="text-base text-[#3ED5DD]">SERVICIOS</h3>
@@ -18,10 +18,10 @@ import SecondCard from "./SecondCard.astro";
             Impedit labore possimus quos.
         </p>
         <div class="grid grid-cols-12 gap-4">
-            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="battery-charging" class="col-span-6"/>
-            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="bluetooth" class="col-span-6"/>
-            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="car" class="col-span-6"/>
-            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="construct" class="col-span-6"/>
+            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="battery-charging" class="col-span-10 md:col-span-6 col-start-2 md:col-start-auto"/>
+            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="bluetooth" class="col-span-10 md:col-span-6 col-start-2 md:col-start-auto"/>
+            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="car" class="col-span-10 md:col-span-6 col-start-2 md:col-start-auto"/>
+            <SecondCard title="Lorem" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit." icon="construct" class="col-span-10 md:col-span-6 col-start-2 md:col-start-auto"/>
         </div>
     </div>
 </section>
