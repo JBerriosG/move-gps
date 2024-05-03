@@ -1,0 +1,17 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	icon:string;
+    class:string;
+}
+
+const {title, body, icon} = Astro.props;
+---
+<div class=`py-4 px-4 bg-gradient-to-r from-[#5A5A5A] via-[#171717] to-[#5A5A5A] rounded-xl ${Astro.props.class} flex flex-col items-center md:items-start text-center md:text-start`>
+	<div class="w-16 h-16 flex justify-center">
+		<ion-icon name=`${icon}` class="text-3xl"></ion-icon>
+	</div>
+	<h2 class="text-2xl">{title}</h2>
+	<p class="text-base font-semibold">{body}</p>
+</div>
