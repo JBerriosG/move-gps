@@ -7,7 +7,7 @@ interface Props {
 
 const {title, body, icon} = Astro.props;
 ---
-<div class="py-10 px-2 bg-gradient-to-r from-[#5A5A5A] via-[#171717] to-[#5A5A5A] rounded-xl border-2 border-[#3ED5DD] relative hover:scale-105 transition-all">
+<div class="py-10 px-2 bg-gradient-to-r from-[#5A5A5A] via-[#171717] to-[#5A5A5A] rounded-xl border-2 border-[#3ED5DD] relative hover:scale-105 transition-all cursor-pointer">
 	<div class="hover:bg-[#3ED5DD] bg-[#171717] rounded-full w-16 h-16 items-center justify-center flex absolute -top-10 left-[40%] md:left-[35%] lg:left-[40%] border-2 border-[#3ED5DD] text-[#3ED5DD] hover:text-white cursor-pointer">
 		<ion-icon name=`${icon}` class="text-2xl lg:text-3xl"></ion-icon>
 	</div>
