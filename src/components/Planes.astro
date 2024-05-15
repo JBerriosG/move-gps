@@ -1,0 +1,26 @@
+---
+import ThirdCard from "./ThirdCard.astro";
+---
+
+<section
+id="planes"
+    class="w-full flex flex-col text-white text-pretty text-center gap-12 md:gap-16 font-extrabold pt-32"
+>
+        <div class="flex flex-col md:gap-8 lg:px-16">
+            <h3 class="text-base text-[#3ED5DD]">PLANES</h3>
+            <h1 class="text-4xl lg:text-6xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </h1>
+            <p class="text-pretty">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquam impedit quaerat, ex suscipit, voluptates placeat
+                praesentium culpa quae dolor earum tenetur? Odit quo perferendis
+                aspernatur quidem. Impedit labore possimus quos.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-12 lg:gap-16">
+            <ThirdCard title="BASIC" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit.Aliquam impedit quaerat, ex suscipit, voluptates placeat" items={["Real-time Threat Monitoring", "User Training Programs", "Email Security"]}/>
+            <ThirdCard title="STANDARD" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit.Aliquam impedit quaerat, ex suscipit, voluptates placeat" items={["Everything in Basic", "Vulnerability Assessments", "Free Snack and Refill 2x", "24/7 Incident Response"]}/>
+            <ThirdCard title="PREMIUM" body="Lorem ipsum, dolor sit amet consectetur adipisicing elit.Aliquam impedit quaerat, ex suscipit, voluptates placeat" items={["Everything in Standard", "Compliance Audits", "Advanced Threat Intelligence"]}/>
+        </div>
+</section>

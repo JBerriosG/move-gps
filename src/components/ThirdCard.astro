@@ -1,0 +1,26 @@
+---
+import PlaneButton from "./PlaneButton.astro";
+import PrimaryButton from "./PrimaryButton.astro";
+
+interface Props {
+    title: string;
+    body: string;
+    items: Array<string>;
+}
+
+const { title, body, items } = Astro.props;
+---
+
+<div
+    class="flex flex-col py-10 px-2 bg-gradient-to-r from-[#5A5A5A] via-[#171717] to-[#5A5A5A] rounded-xl border-2 border-[#5A5A5A] hover:border-[#3ED5DD] hover:scale-105 transition-all cursor-pointer items-center gap-4"
+>
+    <h2 class="text-xl lg:text-2xl text-[#3ED5DD]">{title}</h2>
+    <p class="text-sm lg:text-base font-semibold">{body}</p>
+    <PlaneButton span="$199 |" text=" por mes" />
+    <div class="text-left w-[80%]">
+        <ul class="list-image-[url('/images/checkmark.png')] list-inside">
+            {items.map((item)=><li>{item}</li>)}
+        </ul>
+    </div>
+    <PrimaryButton text="Compre" link=""/>
+</div>
